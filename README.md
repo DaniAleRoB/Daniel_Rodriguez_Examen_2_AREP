@@ -1,3 +1,4 @@
+# Daniel_Rodriguez_Examen_2_AREP
 # PROBLEMA MATEMATICO Factores y Primos
 
 ## Condiciones
@@ -47,10 +48,3 @@ Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente
  "output":  "1,3,5,15"
 }
  
-Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente formato
- 
-{
- "operation": "primes",
- "input":  100,
- "output":  "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89,97"
-}
