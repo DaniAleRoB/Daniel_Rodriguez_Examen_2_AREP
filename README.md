@@ -48,3 +48,31 @@ Salida. El formato de la salida y la respuesta debe ser un JSON con el siguiente
  "output":  "1,3,5,15"
 }
  
+
+
+## Solucion para el despliegue
+
+- Se creo una instancia EC2 en aws
+
+![alt text](image-6.png)
+
+
+- Se configuri el Security Groups de la instancia, donde se habrieron lso puestos el 8080 para el Proxy y el 22 para ssh.
+
+![alt text](image-5.png)
+
+- Dentro del repositorio se genero el jar haciendo mvn clean package  y ese se mando hacia la instancia con el comando:
+    scp -i "MathProblemFyP.pem" examen2-1.0.jar ec2-user@3.86.103.99:~
+
+    ![alt text](image-2.png)
+
+    ![alt text](image-3.png)
+
+- corremos el jar haciendo java -Dserver.address=0.0.0.0 -jar examen2-1.0.jar
+
+![alt text](image-1.png)
+
+- colocamos como url https y usamos la ip publica de laE EC2 junto all puerto
+![alt text](image-4.png)
+
+
